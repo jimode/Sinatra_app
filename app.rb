@@ -7,7 +7,7 @@ IMAGES = [
 ]
 
 class App < Sinatra::Base
-	get '/images' do
+	get '/images/' do
 		@images = IMAGES
 		erb :images
 	end
